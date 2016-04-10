@@ -1,5 +1,10 @@
+run_container=docker run -it --rm=true --name=elixir_school -v $(CURDIR):/scripts elixirschool_app
+
 build:
 	@docker build -t elixirschool_app . > /dev/null
 
-start: build
-	@docker run -it --rm=true --name=elixir_school -v $(CURDIR):/scripts elixirschool_app /bin/sh
+bash: build
+	@$(run_container) /bin/sh
+
+iex: build
+	@$(run_container) iex
