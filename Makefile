@@ -8,3 +8,6 @@ bash: build
 
 iex: build
 	@$(run_container) iex
+
+exec: build
+	@$(run_container) elixir /scripts/lessons/$(file)
