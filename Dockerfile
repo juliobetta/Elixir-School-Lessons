@@ -1,4 +1,4 @@
-FROM msaraiva/elixir
+FROM msaraiva/elixir-dev
 
 RUN mkdir -p /scripts
 WORKDIR /scripts
