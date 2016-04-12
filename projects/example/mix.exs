@@ -30,6 +30,8 @@ defmodule Example.Mixfile do
     [
       {:phoenix, "~> 1.1"},
       {:phoenix_html, "~> 2.3"},
+      {:earmark, "~> 0.2.0", only: [:dev]},
+      {:ex_doc, "~> 0.11.0", only: [:dev]},
       {:cowboy, "~> 1.0", only: [:dev, :test]},
       {:slime, "~> 0.11.0"}
     ]
