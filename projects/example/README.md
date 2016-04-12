@@ -18,3 +18,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
           [applications: [:example]]
         end
 
+
+## Docs
+
+To generate documentation, run the command `mix docs`.
