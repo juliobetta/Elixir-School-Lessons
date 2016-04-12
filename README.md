@@ -3,7 +3,7 @@
 Lessons about the Elixir programming language, from [elixirschool.com](http://elixirschool.com/).
 
 
-# Executing the lessons:
+### Executing the lessons:
 
 If you want to skip the part where you have to install the Erlang and Elixir environment directly into your system,
 you can use docker, just as I did!
