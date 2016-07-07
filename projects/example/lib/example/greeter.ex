@@ -1,4 +1,6 @@
-defmodule Greeter do
+defmodule Example.Greeter do
+  @prefix Application.get_env(:example, __MODULE__)[:prefix]
+
   @moduledoc """
   ...
   """
@@ -12,15 +14,15 @@ defmodule Greeter do
 
   ## Examples
 
-      iex> Greeter.hello("Sean")
+      iex> Example.Greeter.hello("Sean")
       "Hello, Sean"
 
-      iex> Greeter.hello("pete")
+      iex> Example.Greeter.hello("pete")
       "Hello, pete"
 
   """
   @spec hello(String.t) :: String.t
-  def hello(name) do
-    "Hello, " <> name
+  def hello(name \\ "") do
+    @prefix <> name
   end
 end
