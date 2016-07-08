@@ -1,0 +1,5 @@
+v2.
+{<<"/scripts/projects/umbrella_project/_build/test/lib/component_b/ebin/Elixir.ComponentB.beam">>,
+ 'Elixir.ComponentB',module,<<"lib/component_b.ex">>,
+ ['Elixir.Kernel'],
+ [],[],nil}.
